@@ -1,11 +1,7 @@
 <html>
 
 <head>
-    <style>
-        .container{
-            padding-left: 30px;
-        }
-    </style>
+    <link rel="stylesheet" href="learn.css">
 </head>
 
 <body>
@@ -101,7 +97,8 @@
                         class="docutils literal notranslate"><span class="pre">Set</span></code>, and <code
                         class="docutils literal notranslate"><span class="pre">Dictionary</span></code>, as described in
                     <a class="reference internal" href="CollectionTypes.html"><span class="doc">Collection
-                            Types</span></a>.</p>
+                            Types</span></a>.
+                </p>
                 <p>Like C, Swift uses variables to store and refer to values by an identifying name. Swift also makes
                     extensive use of variables whose values can’t be changed. These are known as constants, and are much
                     more powerful than constants in C. Constants are used throughout Swift to make code safer and
@@ -145,7 +142,8 @@
                             variables with the <code
                                 class="docutils literal notranslate"><span class="pre">var</span></code> keyword. Here’s
                             an example of how constants and variables can be used to track the number of login attempts
-                            a user has made:</p>
+                            a user has made:
+                        </p>
                         <div class="highlight-swift notranslate">
                             <div class="code-sample">
                                 <div class="Swift highlight">
@@ -192,7 +190,8 @@
                             <p class="admonition-title">Note</p>
                             <p>If a stored value in your code won’t change, always declare it as a constant with the
                                 <code class="docutils literal notranslate"><span class="pre">let</span></code> keyword.
-                                Use variables only for storing values that need to be able to change.</p>
+                                Use variables only for storing values that need to be able to change.
+                            </p>
                         </div>
                     </div>
                     <div class="section" id="ID312">
@@ -546,7 +545,8 @@
                             can store any value between <code
                                 class="docutils literal notranslate"><span class="pre">-2,147,483,648</span></code> and
                             <code class="docutils literal notranslate"><span class="pre">2,147,483,647</span></code>,
-                            and is large enough for many integer ranges.</p>
+                            and is large enough for many integer ranges.
+                        </p>
                     </div>
                     <div class="section" id="ID320">
                         <h3>UInt<a class="headerlink" href="#ID320" title="Permalink to this headline">¶</a></h3>
@@ -678,7 +678,8 @@
                     <p>Swift always chooses <code
                             class="docutils literal notranslate"><span class="pre">Double</span></code> (rather than
                         <code class="docutils literal notranslate"><span class="pre">Float</span></code>) when inferring
-                        the type of floating-point numbers.</p>
+                        the type of floating-point numbers.
+                    </p>
                     <p>If you combine integer and floating-point literals in an expression, a type of <code
                             class="docutils literal notranslate"><span class="pre">Double</span></code> will be inferred
                         from the context:</p>
@@ -846,7 +847,8 @@
                                 class="docutils literal notranslate"><span class="pre">0</span></code> and <code
                                 class="docutils literal notranslate"><span class="pre">255</span></code>. A number that
                             won’t fit into a constant or variable of a sized integer type is reported as an error when
-                            your code is compiled:</p>
+                            your code is compiled:
+                        </p>
                         <div class="highlight-swift notranslate">
                             <div class="code-sample">
                                 <div class="Swift highlight">
@@ -886,7 +888,8 @@
                                 class="docutils literal notranslate"><span class="pre">UInt16</span></code> initialized
                             with the value of <code
                                 class="docutils literal notranslate"><span class="pre">one</span></code>, and uses this
-                            value in place of the original:</p>
+                            value in place of the original:
+                        </p>
                         <div class="highlight-swift notranslate">
                             <div class="code-sample">
                                 <div class="Swift highlight">
@@ -1075,9 +1078,11 @@
                         <code class="docutils literal notranslate"><span class="pre">true</span></code> or <code
                             class="docutils literal notranslate"><span class="pre">false</span></code> as soon as you
                         create them. Type inference helps make Swift code more concise and readable when it initializes
-                        constants or variables with other values whose type is already known.</p>
+                        constants or variables with other values whose type is already known.
+                    </p>
                     <p>Boolean values are particularly useful when you work with conditional statements such as the
-                        <code class="docutils literal notranslate"><span class="pre">if</span></code> statement:</p>
+                        <code class="docutils literal notranslate"><span class="pre">if</span></code> statement:
+                    </p>
                     <div class="highlight-swift notranslate">
                         <div class="code-sample">
                             <div class="Swift highlight">
@@ -1344,7 +1349,8 @@
                             class="docutils literal notranslate"><span class="pre">123</span></code>, but the string
                         <code
                             class="docutils literal notranslate"><span class="pre">"hello,</span> <span class="pre">world"</span></code>
-                        doesn’t have an obvious numeric value to convert to.</p>
+                        doesn’t have an obvious numeric value to convert to.
+                    </p>
                     <p>The example below uses the initializer to try to convert a <code
                             class="docutils literal notranslate"><span class="pre">String</span></code> into an <code
                             class="docutils literal notranslate"><span class="pre">Int</span></code>:</p>
@@ -1377,7 +1383,8 @@
                             class="docutils literal notranslate"><span class="pre">Bool</span></code> value or a <code
                             class="docutils literal notranslate"><span class="pre">String</span></code> value. It’s
                         either an <code class="docutils literal notranslate"><span class="pre">Int</span></code>, or
-                        it’s nothing at all.)</p>
+                        it’s nothing at all.)
+                    </p>
                     <div class="section" id="ID331">
                         <h3>nil<a class="headerlink" href="#ID331" title="Permalink to this headline">¶</a></h3>
                         <p>You set an optional variable to a valueless state by assigning it the special value <code
@@ -1448,7 +1455,8 @@
                             this comparison with the “equal to” operator (<code
                                 class="docutils literal notranslate"><span class="pre">==</span></code>) or the “not
                             equal to” operator (<code
-                                class="docutils literal notranslate"><span class="pre">!=</span></code>).</p>
+                                class="docutils literal notranslate"><span class="pre">!=</span></code>).
+                        </p>
                         <p>If an optional has a value, it’s considered to be “not equal to” <code
                                 class="docutils literal notranslate"><span class="pre">nil</span></code>:</p>
                         <div class="highlight-swift notranslate">
@@ -1500,7 +1508,8 @@
                         <p>For more about the <code
                                 class="docutils literal notranslate"><span class="pre">if</span></code> statement, see
                             <a class="reference internal" href="ControlFlow.html"><span class="doc">Control
-                                    Flow</span></a>.</p>
+                                    Flow</span></a>.
+                        </p>
                         <div class="admonition note">
                             <p class="admonition-title">Note</p>
                             <p>Trying to use <code
@@ -1586,7 +1595,8 @@
                                 class="docutils literal notranslate"><span class="pre">Int(possibleNumber)</span></code>
                             contains a value, set a new constant called <code
                                 class="docutils literal notranslate"><span class="pre">actualNumber</span></code> to the
-                            value contained in the optional.”</p>
+                            value contained in the optional.”
+                        </p>
                         <p>If the conversion is successful, the <code
                                 class="docutils literal notranslate"><span class="pre">actualNumber</span></code>
                             constant becomes available for use within the first branch of the <code
@@ -1684,7 +1694,8 @@
                             condition is considered to be <code
                                 class="docutils literal notranslate"><span class="pre">false</span></code>. The
                             following <code class="docutils literal notranslate"><span class="pre">if</span></code>
-                            statements are equivalent:</p>
+                            statements are equivalent:
+                        </p>
                         <div class="highlight-swift notranslate">
                             <div class="code-sample">
                                 <div class="Swift highlight">
@@ -2134,7 +2145,8 @@
                         <p>Use a precondition whenever a condition has the potential to be false, but must
                             <em>definitely</em> be true for your code to continue execution. For example, use a
                             precondition to check that a subscript isn’t out of bounds, or to check that a function has
-                            been passed a valid value.</p>
+                            been passed a valid value.
+                        </p>
                         <p>You write a precondition by calling the <a class="reference external"
                                 href="https://developer.apple.com/documentation/swift/1540960-precondition"><code
                                     class="docutils literal notranslate"><span class="pre">precondition(_:_:file:line:)</span></code></a>

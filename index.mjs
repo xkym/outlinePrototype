@@ -7,7 +7,7 @@ let result=treeToDOM(tree)
 let div=document.createElement('div')
 document.body.appendChild(div)
 div.appendChild(result)
-div.id='mydiv'
+div.id='myContainer'
 // printTree(tree)
 div.addEventListener('click',(e)=>{
     if(e.target.className==='data'){

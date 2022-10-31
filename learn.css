@@ -3,11 +3,17 @@
     right: 0;
     top: 0;
     display: flex;
-    max-width: 300px;
+    max-width: 500px;
     z-index: 10000;
     flex-wrap: wrap;
     justify-content: flex-end;
+    
+    /* 解决目录过长 */
+    bottom: 0;
+    overflow-y: scroll;
+    
+    background-color: white;
 }
-.mydiv{
+.container{
     padding-left: 30px;
 }
