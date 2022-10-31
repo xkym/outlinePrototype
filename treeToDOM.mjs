@@ -1,18 +1,20 @@
 export function treeToDOM(tree){
     function rec(node,parentChildren){
-        let ol=document.createElement('div')
+        let div=document.createElement('div')
         let data=document.createElement('span')
-        // data.className='data'
-        let children=document.createElement('ol')
-        // children.className='children'
-        ol.appendChild(data)
-        ol.appendChild(children)
-        parentChildren.appendChild(ol)
+        let children=document.createElement('div')
+
+        div.classList.add('container')
+        data.classList.add('data')
+        children.classList.add('children')
+        
+        div.appendChild(data)
+        div.appendChild(children)
+        parentChildren.appendChild(div)
 
         data.textContent=node.data.textContent
         for (let i = 0; i < node.children.length; i++) {
-            const child = node.children[i];
-            rec(child,children)
+            rec(node.children[i],children)
         }
     }
     let container=document.createElement('div')
