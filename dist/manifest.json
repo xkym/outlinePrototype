@@ -1,0 +1,17 @@
+{
+    "version": "0.1",
+    "manifest_version": 3,
+    "name": "OutlinePrototype",
+    "permissions": [],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "css": [
+                "./learn.css"
+            ],
+            "js": [
+                "main.js"
+            ]
+        }
+    ]
+}
