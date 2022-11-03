@@ -1,3 +1,14 @@
-.node{
-    padding-left: 30px;
+.top-button{
+    background-color: #065ff5;
+}
+
+.outline{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: white;
+}
+
+.container{
+    display: none;
 }

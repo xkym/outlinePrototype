@@ -20,14 +20,13 @@ export function treeToDOM(tree) {
         }
     }
     let container = document.createElement('div')
-    container.classList.add('container')
 
     container.addEventListener('click', (e) => {
         if (e.target.classList.contains('data')) {
             getNodeByTextContent[e.target.textContent].scrollIntoView()
         }
     })
-    
+
     rec(tree, container)
     return container
 }

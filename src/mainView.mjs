@@ -1,18 +1,20 @@
-export function injectContainer(show) {
+export function injectContainer(container) {
     let outline=document.createElement('div')
     let button = document.createElement('button')
+    container.classList.add('container')
 
     button.textContent = '点击'
     button.addEventListener('click', () => {
-        if (show.style.display === 'none') {
-            show.style.display = 'block'
+        console.log(container.style.display);
+        if (container.style.display === 'block') {
+            container.style.display = 'none'
         } else {
-            show.style.display = 'none'
+            container.style.display = 'block'
         }
     })
 
     outline.appendChild(button)
-    outline.appendChild(show)
+    outline.appendChild(container)
     
     document.body.appendChild(outline)
 
