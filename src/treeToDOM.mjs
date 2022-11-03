@@ -4,7 +4,7 @@ export function treeToDOM(tree){
         let data=document.createElement('span')
         let children=document.createElement('div')
 
-        div.classList.add('container')
+        div.classList.add('node')
         data.classList.add('data')
         children.classList.add('children')
         

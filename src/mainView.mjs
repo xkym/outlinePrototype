@@ -13,6 +13,13 @@ export function injectContainer(show) {
     })
     container.appendChild(button)
     container.appendChild(show)
+    
+    let div=document.createElement('div')
+    div.appendChild(button)
+    div.appendChild(container)
+    document.body.appendChild(div)
 
-    document.body.appendChild(container)
+    div.classList.add('outline')
+    button.classList.add('top-button')
+    container.classList.add('container')
 }
