@@ -1,4 +1,4 @@
-const path=require('path')
+const path = require('path')
 
 module.exports = {
     entry: './src/index.mjs',
@@ -6,5 +6,13 @@ module.exports = {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
     },
-    mode:'production'
+    mode: 'production',
+    module: {
+        rules: [
+            {
+                test: /\.css$/i,
+                use: ["style-loader", "css-loader"],
+            },
+        ],
+    },
 }

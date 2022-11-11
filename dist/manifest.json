@@ -6,5 +6,9 @@
         "activeTab",
         "scripting"
     ],
-    "action": {}
+    
+    "action": {},
+    "background": {
+        "service_worker": "background.js"
+    }
 }
